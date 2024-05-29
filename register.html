@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1700c680e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Asset/Logo.png" alt="">
+        </div>
+
+        <div class="hamburger-btn" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <ul class="navigate">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="testimoni.html">Testimonial</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <div class="register-btn">
+            <button><a href="register.html">Register</a></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1>Register <span>Now!</span></h1>
+        </div>
+
+        <div class="box">
+            <form id="step1-form" action="">
+
+                <div class="inputs">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Masukkan nama anda..." required>
+                    <p id="error-name" class="error-message"></p>
+                </div>
+
+                <div class="inputs">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email anda..." required>
+                    
+                    <p id="error-email" class="error-message"></p>
+                </div>
+
+                <div class="inputs">
+                    <label for="address">Your Address</label>
+
+                    <textarea name="address" id="address" cols="30" rows="5" required></textarea>
+
+                    <p id="error-address" class="error-message"></p>
+                </div>
+
+                <div class="p-details">
+                    <label for="gender">Gender</label>
+                    <input type="radio" name="gender" id="dot-1" value="male" required>
+                    <input type="radio" name="gender" id="dot-2" value="female" required>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="details">Male</span>
+                        </label>
+
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="details">Female</span>
+                        </label>
+                    </div>
+
+                    <p id="error-gender" class="error-message"></p>
+                </div>
+
+                <div class="inputs">
+                    <label for="date">Birth Date</label>
+
+                    <input type="date" id="date" required>
+                    
+                    <p id="error-date" class="error-message"></p>
+                </div>
+            </form>
+        </div>
+
+        <button type="submit" onclick="validateForm(event)">Submit</button>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
