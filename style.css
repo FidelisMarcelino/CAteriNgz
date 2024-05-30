@@ -409,7 +409,7 @@ span{
     position: relative;
     width: 700px;
     height: 650px;
-    padding: 20px 73px;
+    padding: 20px 40px 0px 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -450,6 +450,13 @@ span{
 }
 
 .inputs input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    columns: #959595;
+    letter-spacing: 1px;
+}
+
+.inputs textarea::placeholder{
     font-size: 16px;
     font-weight: 500;
     columns: #959595;
@@ -613,6 +620,7 @@ form .p-details .category{
 }
 
 
+/* TABLET */
 @media screen and (max-width: 768px){
 /* NAVBAR */
     .navbar{
@@ -791,5 +799,193 @@ form .p-details .category{
 /* REGISTER */
     .box{
         width: 500px;
+    }
+}
+
+/* MOBILE L */
+@media screen and (max-width: 426px){
+    /* NAVBAR */
+
+    .navigate{
+        display: none;
+        width: 320px;
+    }
+
+    .navigate a{
+        font-size: 14px;
+    }
+
+/* PRODUCT */
+    .left img{
+        margin-left: -40px;
+    }
+    
+    .right{
+        margin-left: 20px;
+    }
+
+/* TESTIMONI */
+    .cover{
+        margin: 50px 100px;
+    }
+
+/* ABOUT US */
+    .logo-mission img{
+        width: 60px;
+        margin: 0px 12px;
+    }
+
+/* REGISTER */
+    .box{
+        width: 240px;
+        padding: 20px 40px 0px 20px;
+    }
+
+    .p-details .details{
+        font-size: 16px;
+    }
+    
+    .p-details .category .dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    .container button{
+        width: 400px;
+    }
+
+/* FOOTER */
+    .copy-right{
+        font-size: 10px;
+    }
+}
+
+/* MOBILE M */
+@media screen and (max-width: 376px){
+/* NAVBAR */
+    .navigate{
+        display: none;
+        width: 270px;
+    }
+
+    .navigate a{
+        font-size: 12px;
+    }
+
+/* PRODUCT */
+    .left img{
+        margin-left: -40px;
+        margin-right: 20px;
+    }
+    
+    .right img{
+        margin-left: 20px;
+    }
+
+/* TESTIMONI */
+    .cover{
+        margin: 50px 75px;
+    }
+
+/* ABOUT US */
+    .our-story img{
+        width: 100%;
+        height: auto;
+    }
+
+    .logo-mission img{
+        width: 50px;
+        margin: 0px 14px;
+    }
+
+/* REGISTER */
+    .box{
+        width: 240px;
+        padding: 20px 40px 0px 20px;
+    }
+    
+    .p-details .category .dot {
+        margin: 10px 20px 0px 0px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .container button{
+        width: 350px;
+    }
+}
+
+/* MOBILE S */
+@media screen and (max-width: 321px){
+/* NAVBAR */
+    .navigate{
+        display: none;
+        width: 200px;
+        gap: 0;
+    }
+    
+    .navigate a{
+        font-size: 12px;
+        margin: 0px 8px;
+    }
+
+/* HOME */
+    .title h1{
+        font-size: 40px;
+    }
+
+    .left-content img, .right-content img{
+        width: 220px;
+        height: auto;
+    }
+
+    .left-content{
+        align-items: center;
+    }
+    
+/* PRODUCT */
+    .left img{
+        margin-left: -40px;
+        margin-right: 10px;
+    }
+        
+    .right img{
+        margin-left: 2px;
+    }
+    
+/* TESTIMONI */
+    .cover{
+        margin: 50px 50px;
+    }
+    
+/* ABOUT US */
+    .logo-mission img{
+        width: 50px;
+        margin: 0px 6px;
+    }
+    
+/* REGISTER */
+    .box{
+        width: 240px;
+        padding: 20px 40px 0px 20px;
+    }
+        
+    .p-details .category .dot {
+        margin: 10px 20px 0px 0px;
+        width: 12px;
+        height: 12px;
+    }
+    
+    .container button{
+        width: 300px;
+    }
+
+/* FOOTER */
+    .nav a{
+        font-size: 12px;
+    }
+
+    .copy-right{
+        font-size: 8px;
     }
 }

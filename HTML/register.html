@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/1700c680e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- NAVBAR -->
     <div class="navbar">
         <div class="logo">
-            <img src="Asset/Logo.png" alt="">
+            <img src="../Asset/Logo.png" alt="">
         </div>
 
         <div class="hamburger-btn" onclick="toggleNavbar()">
@@ -20,7 +21,7 @@
         </div>
 
         <ul class="navigate">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="product.html">Products</a></li>
             <li><a href="testimoni.html">Testimonial</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -41,13 +42,13 @@
 
                 <div class="inputs">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Masukkan nama anda..." required>
+                    <input type="text" id="name" placeholder="Input your name" required>
                     <p id="error-name" class="error-message"></p>
                 </div>
 
                 <div class="inputs">
                     <label for="email">Your Email</label>
-                    <input type="email" id="email" placeholder="Masukkan email anda..." required>
+                    <input type="email" id="email" placeholder="Input your email" required>
                     
                     <p id="error-email" class="error-message"></p>
                 </div>
@@ -55,7 +56,7 @@
                 <div class="inputs">
                     <label for="address">Your Address</label>
 
-                    <textarea name="address" id="address" cols="30" rows="5" required></textarea>
+                    <textarea name="address" id="address" cols="30" rows="5" placeholder="Input your address" required></textarea>
 
                     <p id="error-address" class="error-message"></p>
                 </div>
@@ -91,8 +92,38 @@
 
         <button type="submit" onclick="validateForm(event)">Submit</button>
     </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="../Asset/Logo.png" alt="">
+        </div>
+
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="testimoni.html">Testimonial</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <div class="contact">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../Asset/Instagram.png" alt="">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../Asset/Facebook.png" alt="">
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="../Asset/Whatsapp.png" alt="">
+            </a>
+        </div>
+
+        <div class="copy-right">
+            <p>&copy; 2024 CAteriNgz. All rights reserved. Designed with <span class="hearts">&hearts; </span> by <span class="fo">CAteriNgz's Teams</span></p>
+        </div>
+    </div>
 </body>
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 
 </html>

@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "refine": {
             "title": "Refine",
-            "text": "Promote sustainability and community growth with every dish we create."
+            "text": "Continuously innovate to offer the best culinary experiences."
         },
         "value": {
             "title": "Value",
